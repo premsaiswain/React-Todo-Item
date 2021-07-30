@@ -18,9 +18,9 @@ const Nav = () => {
     return (
         <>
          <nav className="navbar">
-            <i  className={ibtn?"fas fa-sun":"fas fa-moon"} onClick={()=>dark()}></i>
+            <i  className={ibtn?"fas fa-3x fa-sun":"fas fa-2x fa-moon"} onClick={()=>dark()}></i>
          </nav> 
-           <h1 style={{textAlign:'center'}}>Todo-List</h1> 
+           <h1 className="ttle">Todo-List</h1> 
         </>
     )
 }

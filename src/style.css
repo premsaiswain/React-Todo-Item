@@ -9,8 +9,6 @@
 }
 i{
     float:right;
-    margin-top: 0.3rem;
-    margin-right: 1rem;
 }
 input{
     outline: none;
@@ -42,7 +40,7 @@ body{
 }
 .fa-trash-alt{
  color: rgb(245, 9, 9);
- margin-bottom: 1rem;
+ margin: 0.5rem;
 }
 h4{
     display: inline-block;
@@ -51,6 +49,10 @@ h4{
 }
 .fa-edit{
     color: rgb(43, 240, 43);
+    margin: 0.5rem;
+}
+.fa-plus{
+    margin: 0.4rem;
 }
 
 .navbar{
@@ -60,12 +62,9 @@ h4{
     margin-left: 2rem;
     margin-right: 2rem;
     margin-top: 0.5rem;
-    height: 7vh;
-    width: 20vw;
+    height: 7vh;@media  {
+    
 }
-
-.fas{
-    margin: 0.5rem;
     
 }
 .fa-sun{
@@ -94,4 +93,17 @@ h4{
    .navbar:hover{
        border: none;
    }
+}
+.ttle{
+    text-align:center;
+}
+.ttle:hover{
+    color:rgb(53, 53, 216);
+}
+
+@media screen and (max-width:354px){
+    .ip{
+       width:90vw;
+       margin-left: 1rem;
+    }
 }

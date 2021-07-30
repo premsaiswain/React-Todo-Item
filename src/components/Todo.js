@@ -23,8 +23,12 @@ const Todo = () => {
     const change=(e)=>{
         setItems(e.target.value)
     }
+    //function that adds input items to the list
      const chg=()=>{
-         if(btn){
+         if(items.length > 18 || items === ""){
+           alert("Item is to big to be in the list/ nothing to add")
+         }
+        else if(btn){
              setList(
              list.map((curr)=>{
                if(curr.id === edtl){
@@ -46,6 +50,7 @@ const Todo = () => {
          setList(newarr);
          setItems('');}
      }
+     //function that deletes the item from the list
      const delet=(id)=>{
         const newobj = list.filter((its)=>{
             return its.id !== id
@@ -53,6 +58,7 @@ const Todo = () => {
       setList(newobj)
        localStorage.setItem("myList",JSON.stringify(newobj));
     }
+    //function that edits the list item
     const edt=(id)=>{
         const dt= list.filter((data)=>{
            return data.id === id; 
@@ -62,6 +68,7 @@ const Todo = () => {
          setEdlt(id);
          setbtn(true); 
     }
+    //final return to index.js
         return (
         <>
          <Nav/>
